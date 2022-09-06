@@ -1,0 +1,16 @@
+{
+  "location": {
+    "lat": 48.78569,
+    "lng": 34.898842
+  },
+  "accuracy": 100,
+  "name": "Shubham Kumar Sharma",
+  "phone_number": "(+91) 9968455365",
+  "address": "149A, Govindpura, Jaipur 302012",
+  "types": [
+    "shoe park",
+    "shop"
+  ],
+  "website": "http://google.com",
+  "language": "French-IN"
+}
