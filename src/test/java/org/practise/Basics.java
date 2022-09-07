@@ -66,7 +66,7 @@ public class Basics {
         Assert.assertEquals(path2.getString("address"), address);
         System.out.println(path2.getString("address"));
         System.out.println("Successfully Validated");
-
+        System.out.println("I am OK");
 
 
 
