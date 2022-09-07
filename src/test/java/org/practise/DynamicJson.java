@@ -38,10 +38,10 @@ public class DynamicJson {
     // Change the Data in addMultipleBook method when run this Test Case as the provided data already run and exists
     @DataProvider(name = "AddBook")
     public Object[][] addMultipleBook() {
-        Object[][] newEntries = {{"agaafa", "123"},
-                {"afbftufvsa", "345"},
-                {"fdvddvah", "4534"},
-                {"hjgbaa146", "48989"}
+        Object[][] newEntries = {{"aehgaa", "123"},
+                {"afobffgfgadtufvsa", "345"},
+                {"fdlovdtyfadvah", "4534"},
+                {"hjgghpuubaa146", "48989"}
 
         };
         return newEntries;

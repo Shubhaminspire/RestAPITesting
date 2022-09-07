@@ -4,9 +4,9 @@
     <test verbose="2" preserve-order="true" name="/Users/shubhamsharma/IdeaProjects/RestAssured Practise">
         <classes>
             <class name="org.practise.DynamicJson">
-                <methods>
+                <!--<methods>
                     <include name="addBook"/>
-                </methods>
+                </methods>-->
             </class>
         </classes>
     </test>

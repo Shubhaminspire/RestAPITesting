@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-09-07T12:11:42 IST" name="Failed suite [All Test Suite]" finished-at="2022-09-07T12:11:45 IST" duration-ms="3401">
+    <groups>
+    </groups>
+    <test started-at="2022-09-07T12:11:42 IST" name="/Users/shubhamsharma/IdeaProjects/RestAssured Practise(failed)" finished-at="2022-09-07T12:11:45 IST" duration-ms="3401">
+      <class name="org.practise.DynamicJson">
+        <test-method signature="addBook(java.lang.String,java.lang.String)[pri:0, instance:org.practise.DynamicJson@290dbf45]" started-at="2022-09-07T12:11:42 IST" name="addBook" data-provider="AddBook" finished-at="2022-09-07T12:11:45 IST" duration-ms="3076" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ahgaa]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addBook -->
+        <test-method signature="addBook(java.lang.String,java.lang.String)[pri:0, instance:org.practise.DynamicJson@290dbf45]" started-at="2022-09-07T12:11:45 IST" name="addBook" data-provider="AddBook" finished-at="2022-09-07T12:11:45 IST" duration-ms="222" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[hjgghpbaa146]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[48989]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addBook -->
+      </class> <!-- org.practise.DynamicJson -->
+    </test> <!-- /Users/shubhamsharma/IdeaProjects/RestAssured Practise(failed) -->
+  </suite> <!-- Failed suite [All Test Suite] -->
+</testng-results>
