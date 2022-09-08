@@ -10,6 +10,10 @@ import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
 import org.testng.Assert;
 
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
 
@@ -20,7 +24,7 @@ public class Basics {
     public static String status;
 
     //static BodyContent content;
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         //content= new BodyContent();
         // Verify that Add Place API is working fine
         RestAssured.baseURI = "https://rahulshettyacademy.com";
@@ -31,8 +35,13 @@ public class Basics {
 //                .header("Server","Apache/2.4.41 (Ubuntu)");
 
         // Add Place > Update Place with New Address > Get Place to validate if New Address is Present in Response
-        String response = given().queryParam("key", "qaclick123").header("Content-Type", "application/json").
-                body(BodyContent.postMapBody).when().post("/maps/api/place/add/json")
+//        String response = given().queryParam("key", "qaclick123").header("Content-Type", "application/json").
+//                body(BodyContent.postMapBody).when().post("/maps/api/place/add/json")
+//                .then().assertThat().statusCode(200).body("scope", equalTo("APP"))
+//                .header("Server", "Apache/2.4.41 (Ubuntu)").extract().response().asString();
+// Convert the Content of File to String - > Convert COntent to Byte > Convert Byte to String
+        String response = given().log().all().queryParam("key", "qaclick123").header("Content-Type", "application/json").
+                body(new String(Files.readAllBytes(Path.of("resources/AddPlace.json")))).when().post("/maps/api/place/add/json")
                 .then().assertThat().statusCode(200).body("scope", equalTo("APP"))
                 .header("Server", "Apache/2.4.41 (Ubuntu)").extract().response().asString();
 

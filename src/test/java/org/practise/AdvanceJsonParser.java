@@ -7,7 +7,7 @@ import org.testng.Assert;
 public class AdvanceJsonParser {
 
     public static void main(String[] args) {
-        JsonPath path  = new JsonPath(CoursesResponse.CoursesList());
+        JsonPath path  = new JsonPath(CoursesResponse.CoursesList("Selinium Python","Cypress","RPA"));
 
        // Print No of courses returned by API
        int coursesLength =  path.get("courses.size()");
