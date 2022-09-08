@@ -7,7 +7,7 @@ import pojo.AddPlace;
 
 import static io.restassured.RestAssured.given;
 
-public class SerializationAddPlace extends AddPlace {
+public class SerializationAddPlace {
     public static void main(String[] args) {
 
         RequestSpecification request = given().log().all().spec(AddPlaceData.reqSpec)
